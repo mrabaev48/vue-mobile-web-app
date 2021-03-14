@@ -13,6 +13,7 @@
       <div class="game-buttons">
         <q-btn
           size="lg"
+          class="setFavouriteBtn"
           flat
           round
           :color="allFavourites.includes(game.id) ? 'red': 'primary'"
@@ -37,10 +38,7 @@
     name: 'GameItem',
     props: ['game'],
     computed: {
-      ...mapGetters('game', ['allFavourites']),
-      formattedDate: () => {
-        return ''
-      }
+      ...mapGetters('game', ['allFavourites'])
     },
     methods: {
       ...mapActions('game', ['toggleFavourite', 'isFavourite']),
