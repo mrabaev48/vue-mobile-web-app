@@ -9,7 +9,7 @@ module.exports = {
     },
   },
   setupFilesAfterEnv: ['<rootDir>/test/jest/jest.setup.js'],
-  // noStackTrace: true,
+  // noStackTrace: true,ggithub
   // bail: true,
   // cache: false,
   // verbose: true,
